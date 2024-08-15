@@ -1,0 +1,638 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <script>
+            (function (w, d, s, l, i) {
+                w[l] = w[l] || [];
+                w[l].push({
+                    "gtm.start": new Date().getTime(),
+                    event: "gtm.js",
+                });
+                var f = d.getElementsByTagName(s)[0],
+                    j = d.createElement(s),
+                    dl = l != "dataLayer" ? "&l=" + l : "";
+                j.async = true;
+                j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+                f.parentNode.insertBefore(j, f);
+            })(window, document, "script", "dataLayer", "GTM-MX257JXZ");
+        </script>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=yes">
+        <link rel="icon" href="favicons/images-favicon.ico">
+        <link rel="stylesheet" href="css/css-style.css">
+        <link rel="stylesheet" href="css/css-custom.css">
+        <link href="https://cdn.jsdelivr.net/gh/hung1001/font-awesome-pro-v6@44659d9/css/all.min.css" rel="stylesheet" type="text/css">
+        <title>Gift Card - Jeroid</title>
+    </head>
+    <body>
+        <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MX257JXZ" height="0" width="0" style="display: none; visibility: hidden"></iframe></noscript>
+        <!-- header -->
+        <div style="transition: top 0.3s" id="nav-bar" class="flex sticky top-0 bg-white z-50 justify-between md:justify-around font-lexend max-w-[1600px] mx-auto">
+            <div class="py-5">
+                <a href="www.jeroid.html">
+                    <img class="w-[150px] h-[36.4px] pl-4 md:pl-0 md:w-full md:h-full self-center" src="images/images-logo.svg" alt="logo">
+                </a>
+            </div>
+
+            <ul class="hidden md:flex min-h-max gap-[60px] items-center text-mainColor">
+                <li class="h-full relative dropdown">
+                    <div class="h-full dropbtn flex items-center gap-2 cursor-pointer">
+                        Products
+                        <i class="fa-solid fa-chevron-down nav-icon"></i>
+                    </div>
+
+                    <div id="productDropdown" class="px-5 py-3 dropdown-content absolute top-[84px] left-[-100px] min-w-max hidden z-50 bg-white rounded-lg shadow-dropdown">
+                        <a href="crypto.html" class="py-3 px-2 block cursor-pointer rounded-lg nav-hov">
+                            <div class="flex gap-2 items-center">
+                                <div class="w-8 h-8 bg-[#e6f7fd] rounded-full flex items-center justify-center">
+                                    <img src="images/images-currency-bitcoin-circle.svg">
+                                </div>
+                                <div class="flex flex-col">
+                                    <span class="font-medium">Digital Assets</span>
+                                    <span class="text-xs font-poppins text-[#697599]">Save, Buy/Sell &amp; Send/Receive Digital
+                                        Assets</span>
+                                </div>
+                            </div>
+                        </a>
+
+                        <a href="gift-cards.html" class="py-3 px-2 block cursor-pointer rounded-lg nav-hov">
+                            <div class="flex gap-2 items-center">
+                                <div class="w-8 h-8 bg-[#E6f7fd] rounded-full flex items-center justify-center">
+                                    <img src="images/images-credit-card-02.svg">
+                                </div>
+                                <div class="flex flex-col">
+                                    <span class="font-medium">Giftcards</span>
+                                    <span class="text-xs font-poppins text-[#697599]">Redeem unused Giftcards&nbsp;for&nbsp;Cash</span>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="utility-bills.html" class="py-3 px-2 block cursor-pointer rounded-lg nav-hov">
+                            <div class="flex gap-2 items-center">
+                                <div class="w-8 h-8 bg-[#E6f7fd] rounded-full flex items-center justify-center">
+                                    <img src="images/homepage-receipt.svg">
+                                </div>
+                                <div class="flex flex-col">
+                                    <span class="font-medium">Utility Bills</span>
+                                    <span class="text-xs font-poppins text-[#697599]">Airtime top up &amp; Data</span>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="e-funds.html" class="py-3 px-2 block cursor-pointer rounded-lg nav-hov">
+                            <div class="flex gap-2 items-center">
+                                <div class="w-8 h-8 bg-[#E6f7fd] rounded-full flex items-center justify-center">
+                                    <img src="images/images-message-chat-square.svg">
+                                </div>
+                                <div class="flex flex-col">
+                                    <span class="font-medium">E-funds - Trade Chat</span>
+                                    <span class="text-xs font-poppins text-[#697599]">Secured OTC Transactions for
+                                        Unlisted&nbsp;Assets</span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </li>
+
+                <li class="h-full dropdown relative">
+                    <div class="h-full dropbtn flex items-center gap-2 cursor-pointer">
+                        Company
+                        <i class="fa-solid fa-chevron-down nav-icon"></i>
+                    </div>
+                    <div class="px-5 py-3 dropdown-content absolute top-[84px] left-[-50px] min-w-[200px] font-medium rounded-lg shadow-dropdown bg-white z-10 hidden">
+                        <a class="text-mainColor navlink nav-hov" href="about-us.html">About Us</a>
+                        <a class="text-mainColor navlink nav-hov" href="careers.html">Career</a>
+                        <a class="text-mainColor navlink nav-hov" href="blog.html">Blog</a>
+                    </div>
+                </li>
+
+                <li class="h-full dropdown relative">
+                    <div class="h-full dropbtn flex items-center gap-2 cursor-pointer">
+                        Support
+                        <i class="fa-solid fa-chevron-down nav-icon"></i>
+                    </div>
+                    <div class="px-5 py-3 dropdown-content absolute top-[84px] left-[-50px] min-w-[200px] font-medium rounded-lg shadow-dropdown bg-white z-10 hidden">
+                        <a class="text-mainColor navlink nav-hov" href="contact-us.html">Contact Us</a>
+                        <a class="text-mainColor navlink nav-hov" href="faq.html">FAQs</a>
+                        <a class="text-mainColor navlink nav-hov help_centre_link" href="#">Help Center</a>
+                    </div>
+                </li>
+
+                <li class="h-full dropdown relative">
+                    <div class="h-full dropbtn flex items-center gap-2 cursor-pointer">
+                        Calculator
+                        <i class="fa-solid fa-chevron-down nav-icon"></i>
+                    </div>
+                    <div class="px-5 py-3 dropdown-content absolute top-[84px] left-[-50px] min-w-[200px] font-medium rounded-lg shadow-dropdown bg-white z-10 hidden">
+                        <a class="text-mainColor navlink nav-hov" href="crypto-calculator.html">Crypto
+                        </a>
+                        <a class="text-mainColor navlink nav-hov" href="giftcard-calculator.html">Giftcard
+                        </a>
+                    </div>
+                </li>
+            </ul>
+
+            <div class="flex self-center items-center gap-6">
+                <button class="hidden md:flex px-3 py-2 md:px-6 md:py-3 bg-mainColor text-sm text-white btn btn-blue btn-nav">
+                    Log in
+                </button>
+                <button class="hidden md:flex text-sm text-[#54C9F4] border btn-startedNew btn btn-nav">
+                    Get Started
+                </button>
+
+                <div id="" onclick="openNav()" class="space-y-1 md:hidden cursor-pointer z-20 pr-4">
+                    <div class="w-6 h-1 rounded bg-mainColor"></div>
+                    <div class="w-6 h-1 rounded bg-mainColor"></div>
+                    <div class="w-6 h-1 rounded bg-mainColor"></div>
+                </div>
+            </div>
+
+            <div id="myNav" class="overlay">
+                <div class="flex items-center justify-between py-5 bg-white">
+                    <a href="www.jeroid.html">
+                        <img class="w-[150px] h-[36.4px] pl-4" src="images/images-logo.svg" alt=""></a>
+
+                    <i class="fa-solid fa-xmark pr-4 text-[30px] text-mainColor cursor-pointer" onclick="closeNav()"></i>
+                </div>
+
+                <ul id="mobileLinks" class="w-full flex-col items-start text-mainColor p-4">
+                    <li class="h-full mb-3 relative self-center">
+                        <div onclick="mobileProductDropdown()" class="h-full dropBtn flex justify-between items-center gap-2 cursor-pointer">
+                            Products
+                            <i class="fa-solid fa-chevron-down nav-icon"></i>
+                        </div>
+
+                        <div id="mobileProductDropdown" class="py-3 w-full hidden dropdownContent">
+                            <a href="crypto.html" class="py-3 px-2 block cursor-pointer rounded-lg hover:bg-[#DDE4F7]">
+                                <div class="flex gap-2 items-center">
+                                    <div class="w-8 h-8 bg-[#e6f7fd] rounded-full flex items-center justify-center">
+                                        <img src="images/images-currency-bitcoin-circle.svg">
+                                    </div>
+                                    <div class="flex flex-col">
+                                        <span class="font-medium text-sm">Crypto</span>
+                                        <span class="text-xs font-poppins text-[#697599]">Save, Buy/Sell &amp; Send/Receive
+                                            Crypto</span>
+                                    </div>
+                                </div>
+                            </a>
+
+                            <a href="gift-cards.html" class="py-3 px-2 block cursor-pointer rounded-lg hover:bg-[#DDE4F7]">
+                                <div class="flex gap-2 items-center">
+                                    <div class="w-8 h-8 bg-[#E6f7fd] rounded-full flex items-center justify-center">
+                                        <img src="images/images-credit-card-02.svg">
+                                    </div>
+                                    <div class="flex flex-col">
+                                        <span class="font-medium text-sm">Giftcards</span>
+                                        <span class="text-xs font-poppins text-[#697599]">Redeem unused Giftcards for
+                                            Cash</span>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="utility-bills.html" class="py-3 px-2 block cursor-pointer rounded-lg hover:bg-[#DDE4F7]">
+                                <div class="flex gap-2 items-center">
+                                    <div class="w-8 h-8 bg-[#E6f7fd] rounded-full flex items-center justify-center">
+                                        <img src="images/homepage-receipt.svg">
+                                    </div>
+                                    <div class="flex flex-col">
+                                        <span class="font-medium text-sm">Utility Bills</span>
+                                        <span class="text-xs font-poppins text-[#697599]">Airtime top up &amp; Data</span>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="e-funds.html" class="py-3 px-2 block cursor-pointer rounded-lg hover:bg-[#DDE4F7]">
+                                <div class="flex gap-2 items-center">
+                                    <div class="w-8 h-8 bg-[#E6f7fd] rounded-full flex items-center justify-center">
+                                        <img src="images/images-message-chat-square.svg">
+                                    </div>
+                                    <div class="flex flex-col">
+                                        <span class="font-medium text-sm">E-funds - Trade Chat</span>
+                                        <span class="text-xs font-poppins text-[#697599]">Secured OTC Transactions for
+                                            Unlisted Assets</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </li>
+
+                    <li class="h-full mb-3 dropdown relative">
+                        <div onclick="mobileCompanyDropdown()" class="h-full dropBtn flex justify-between items-center gap-2 cursor-pointer">
+                            Company
+                            <i class="fa-solid fa-chevron-down nav-icon"></i>
+                        </div>
+                        <div id="mobileCompanyDropdown" class="px-2 py-1 hidden dropdownContent text-sm font-medium bg-[#dde4f7]">
+                            <a class="text-mainColor block p-2" href="about-us.html">About Us</a>
+                            <a class="text-mainColor block p-2" href="careers.html">Career</a>
+                            <a class="text-mainColor block p-2" href="blog.html">Blog</a>
+                        </div>
+                    </li>
+
+                    <li class="h-full dropdown mb-3 relative">
+                        <div onclick="mobileSupportDropdown()" class="h-full dropBtn flex justify-between items-center gap-2 cursor-pointer">
+                            Support
+                            <i class="fa-solid fa-chevron-down nav-icon"></i>
+                        </div>
+                        <div id="mobileSupportDropdown" class="px-2 py-1 hidden dropdownContent text-sm font-medium bg-[#dde4f7]">
+                            <a class="text-mainColor block p-2" href="contact-us.html">Contact Us</a>
+                            <a class="text-mainColor block p-2" href="faq.html">FAQs</a>
+                            <a class="text-mainColor block p-2 help_centre_link" href="www.jeroid.html">Help Center</a>
+                        </div>
+                    </li>
+
+                    <li class="h-full dropdown mb-3 relative">
+                        <div onclick="mobileCalculatorDropdown()" class="h-full dropBtn flex justify-between items-center gap-2 cursor-pointer">
+                            Calculator
+                            <i class="fa-solid fa-chevron-down nav-icon"></i>
+                        </div>
+                        <div id="mobileCalculatorDropdown" class="px-2 py-1 hidden dropdownContent text-sm font-medium bg-[#dde4f7]">
+                            <a class="text-mainColor block p-2" href="crypto-calculator.html">Crypto</a>
+                            <a class="text-mainColor block p-2" href="giftcard-calculator.html">Giftcards</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!--hero section-->
+        <div class="bg-mainColor px-4 pt-14 md:pt-[117px] flex flex-col items-center text-center text-white relative appear2 max-w-[1600px] mx-auto">
+            <p class="font-lexend font-medium text-[40px] md:text-5xl capitalize mb-4 md:mb-0 leading-[50px] md:leading-[77px]">
+                trade Giftcards from anywhere quickly
+            </p>
+            <p class="font-poppins">
+                Why settle for less when you can have more trading your unused
+                giftcards on your Jeroid account
+            </p>
+            <button class="mt-8 py-3 px-6 font-lexend font-semibold rounded bg-white text-mainColor">
+                Download App
+            </button>
+
+            <div class="relative mt-10 md:mt-[55px]">
+                <img class="h-[300px] md:h-full" src="images/giftcard-giftcardHero.svg" alt="">
+                <!-- <div
+                    class="absolute left-[-161px] bottom-[406px] w-[75px] h-[75px] rounded-full bg-[#E6F7FD] flex items-center justify-center border-2 border-dashed border-[#5C6B98]"
+                >
+                    <img src="/assets/images/giftcard/newEbay.svg" alt="" />
+                </div>
+                <div
+                    class="absolute left-[-173px] bottom-[234px] w-[75px] h-[75px] rounded-full bg-[#E6F7FD] flex items-center justify-center border-2 border-dashed border-[#5C6B98]"
+                >
+                    <img src="/assets/images/giftcard/newBestbuy.svg" alt="" />
+                </div>
+                <div
+                    class="absolute left-[-194px] bottom-[46px] w-[75px] h-[75px] rounded-full bg-[#E6F7FD] flex items-center justify-center border-2 border-dashed border-[#5C6B98]"
+                >
+                    <img src="/assets/images/giftcard/newAmazon.svg" alt="" />
+                </div>
+                <div
+                    class="absolute right-0 bottom-[395px] w-[75px] h-[75px] rounded-full bg-[#E6F7FD] flex items-center justify-center border-2 border-dashed border-[#5C6B98]"
+                >
+                    <img src="/assets/images/giftcard/newEbay.svg" alt="" />
+                </div>
+                <div
+                    class="absolute right-[-80px] bottom-[234px] w-[75px] h-[75px] rounded-full bg-[#E6F7FD] flex items-center justify-center border-2 border-dashed border-[#5C6B98]"
+                >
+                    <img src="/assets/images/giftcard/newBestbuy.svg" alt="" />
+                </div>
+                <div
+                    class="absolute right-[-106px] bottom-[46px] w-[75px] h-[75px] rounded-full bg-[#E6F7FD] flex items-center justify-center border-2 border-dashed border-[#5C6B98]"
+                >
+                    <img src="/assets/images/giftcard/newAmazon.svg" alt="" />
+                </div> -->
+            </div>
+        </div>
+
+        <!--featured giftcards-->
+        <div class="bg-white flex flex-col items-center gap-8 px-4 md:px-[90px] pt-[70px] pb-[70px] md:pb-[427px] overflow-hidden relative appear2 max-w-[1600px] mx-auto">
+            <h2 class="text-mainColor text-2xl md:text-[36px] font-medium font-lexend">
+                Freatured Giftcards
+            </h2>
+            <p class="text-[#475467] font-poppins md:w-[543px] text-center">
+                We accept giftcards from different locations all over the world.
+                Within 10 minutes you would get the equivalent in your local
+                currency.
+            </p>
+
+            <!--left-->
+            <div class="hidden absolute left-[-70px] top-[110px] w-[120px] h-[120px] rounded-full bg-secColor md:flex items-center justify-center">
+                <img src="images/giftcard-sephoraGift.svg" alt="">
+            </div>
+            <div class="hidden absolute left-[90px] top-[110px] w-[120px] h-[120px] rounded-full bg-secColor md:flex items-center justify-center">
+                <img src="images/giftcard-amazonGift.svg" alt="">
+            </div>
+            <div class="hidden absolute left-[250px] top-[110px] w-[120px] h-[120px] rounded-full bg-secColor md:flex items-center justify-center">
+                <img src="images/giftcard-amexGift.svg" alt="">
+            </div>
+            <div class="hidden absolute left-[68px] top-[264px] w-[120px] h-[120px] rounded-full bg-secColor md:flex items-center justify-center">
+                <img class="w-[73px] h-[30px]" src="images/giftcard-newEbay.svg" alt="">
+            </div>
+            <div class="hidden absolute left-[232px] top-[264px] w-[120px] h-[120px] rounded-full bg-secColor md:flex items-center justify-center">
+                <img src="images/giftcard-razerGift.svg" alt="">
+            </div>
+            <div class="hidden absolute left-[-14px] top-[418px] w-[120px] h-[120px] rounded-full bg-secColor md:flex items-center justify-center">
+                <img src="images/giftcard-playstationGift.svg" alt="">
+            </div>
+            <div class="hidden absolute left-[150px] top-[418px] w-[120px] h-[120px] rounded-full bg-secColor md:flex items-center justify-center">
+                <img src="images/giftcard-netflixGift.svg" alt="">
+            </div>
+            <div class="hidden absolute left-[314px] top-[418px] w-[120px] h-[120px] rounded-full bg-secColor md:flex items-center justify-center">
+                <img src="images/giftcard-visaGift.svg" alt="">
+            </div>
+
+            <!--right-->
+            <div class="hidden absolute right-[175px] top-[119px] w-[120px] h-[120px] rounded-full bg-secColor md:flex items-center justify-center">
+                <img src="images/giftcard-adidas-gift.svg" alt="">
+            </div>
+            <div class="hidden absolute right-[15px] top-[119px] w-[120px] h-[120px] rounded-full bg-secColor md:flex items-center justify-center">
+                <img src="images/giftcard-gamersGift.svg" alt="">
+            </div>
+
+            <div class="hidden absolute right-[157px] top-[273px] w-[120px] h-[120px] rounded-full bg-secColor md:flex items-center justify-center">
+                <img src="images/giftcard-steamGift.svg" alt="">
+            </div>
+            <div class="hidden absolute right-[-7px] top-[273px] w-[120px] h-[120px] rounded-full bg-secColor md:flex items-center justify-center">
+                <img src="images/giftcard-homedepotGift.svg" alt="">
+            </div>
+            <div class="hidden absolute right-[239px] top-[427px] w-[120px] h-[120px] rounded-full bg-secColor md:flex items-center justify-center">
+                <img src="images/giftcard-xboxGift.svg" alt="">
+            </div>
+            <div class="hidden absolute right-[75px] top-[427px] w-[120px] h-[120px] rounded-full bg-secColor md:flex items-center justify-center">
+                <img src="images/giftcard-sephoraGift.svg" alt="">
+            </div>
+            <div class="hidden absolute right-[-89px] top-[427px] w-[120px] h-[120px] rounded-full bg-secColor md:flex items-center justify-center">
+                <img src="images/giftcard-homedepotGift.svg" alt="">
+            </div>
+        </div>
+
+        <!--featured giftcards-->
+        <div class="bg-secColor flex flex-col items-center px-4 md:px-[90px] pt-[70px] pb-[94px] appear2 max-w-[1600px] mx-auto">
+            <h2 class="text-mainColor text-center text-2xl md:text-[36px] font-medium font-lexend">
+                Why choose Jeroid to Redeem your Giftcards?
+            </h2>
+            <p class="mt-6 text-[#475467] font-poppins md:w-[770px] text-center">
+                Jeroid is the beginning and end of smooth giftcards transactions
+                in Africa with numerous accolades to her name. Our customers are
+                our most cherished assets and we love giving them the best
+                trading experience. Don&rsquo;t sit on the fence, say goodbye to
+                unreliable vendors and get started with the future of trading.
+            </p>
+            <div class="mt-12 md:mt-[100px] grid grid-cols-1 md:grid-cols-2 gap-x-[18px] gap-10 md:gap-y-20">
+                <div class="flex flex-col md:flex-row items-center gap-6">
+                    <div class="w-[183px] h-[170px] flex items-center justify-center bg-mainColor rounded-[28px]">
+                        <img src="images/images-groupgift.svg" alt="">
+                    </div>
+                    <div class="flex flex-col gap-4">
+                        <span class="text-center md:text-start font-lexend font-medium text-xl md:text-2xl">Accept Multiple Countries</span>
+                        <span class="md:w-[378px] text-center md:text-start font-poppins text-[#475467] leading-[180%]">Buy and sell Giftcards from over 20 countries
+                            around the world. Get paid in your local
+                            currency.</span>
+                    </div>
+                </div>
+                <div class="flex flex-col md:flex-row items-center gap-6">
+                    <div class="w-[183px] h-[170px] flex items-center justify-center bg-mainColor rounded-[28px]">
+                        <img src="images/giftcard-varietygift.svg" alt="">
+                    </div>
+                    <div class="flex flex-col gap-4">
+                        <span class="text-center md:text-start font-lexend font-medium text-xl md:text-2xl">Variety of cards</span>
+                        <span class="md:w-[378px] text-center md:text-start font-poppins text-[#475467] leading-[180%]">From iTunes to Amazon Gift cards to Visa to Google
+                            Play to Steam to Vanilla to Sephora and so much
+                            more. Jeroid provides value for your giftcards with
+                            the best market rate you can find</span>
+                    </div>
+                </div>
+                <div class="flex flex-col md:flex-row items-center gap-6">
+                    <div class="w-[183px] h-[170px] flex items-center justify-center bg-mainColor rounded-[28px]">
+                        <img src="images/images-pose%205.svg" alt="">
+                    </div>
+                    <div class="flex flex-col gap-4">
+                        <span class="text-center md:text-start font-lexend font-medium text-xl md:text-2xl">Instant Settlements</span>
+                        <span class="md:w-[378px] text-center md:text-start font-poppins text-[#475467] leading-[180%]">Our trading time is as low as 10 Minutes for your
+                            Giftcards. With your Jeroid account, you can trust
+                            to get lightning-speed transactions.</span>
+                    </div>
+                </div>
+                <div class="flex flex-col md:flex-row items-center gap-6">
+                    <div class="w-[183px] h-[170px] flex items-center justify-center bg-mainColor rounded-[28px]">
+                        <img src="images/images-lock%201.svg" alt="">
+                    </div>
+                    <div class="flex flex-col gap-4">
+                        <span class="text-center md:text-start font-lexend font-medium text-xl md:text-2xl">Safe and Reliable</span>
+                        <span class="md:w-[378px] text-center md:text-start font-poppins text-[#475467] leading-[180%]">We have completed hundreds of millions in giftcard
+                            trades over the past five years of being in
+                            business. Your assets are safe and we put you
+                            first.</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--featured giftcards-->
+        <div class="bg-white flex flex-col items-center px-4 md:px-[90px] pt-11 md:pt-[50px] md:pb-[94px] appear2 max-w-[1600px] mx-auto">
+            <div class="mt-14 md:mt-8 self-stretch flex flex-col md:flex-row items-center justify-between">
+                <div class="w-full md:w-[584px]">
+                    <h3 class="font-lexend md:leading-[56px] text-center md:text-start font-medium text-2xl md:text-[40px] text-mainColor">
+                        Know how much you stand to gain
+                    </h3>
+                    <p class="my-8 font-poppins text-[#808080] text-justify leading-8">
+                        With Jeroid you won't be settling for less. Click the
+                        link below to chek out our amazing rates.
+                    </p>
+                    <a href="giftcard-calculator.html" class="inline-block gap-5 bg-mainColor font-lexend font-medium text-white btn btn-blue btn-faq">
+                        Use Calculator
+                        <i class="fa-solid fa-chevron-right ml-5"></i>
+                    </a>
+                </div>
+                <!-- <div>
+                </div> -->
+                <img src="images/giftcard-gift-calc.svg" alt="">
+            </div>
+        </div>
+
+        <!-- Get Started-->
+        <div class="pt-[50px] pb-[183px] px-4 md:py-40 flex flex-col items-center bg-mainColor text-white relative font-poppins max-w-[1600px] mx-auto appear2">
+            <img class="hidden md:block w-[430px] h-[374px] absolute top-0 left-0" src="images/get-started-ssss2.png" alt="">
+            <img class="hidden md:block w-[522px] h-[314px] absolute bottom-0 right-0" src="images/get-started-ssss1.png" alt="">
+            <img class="block md:hidden w-[99px] h-[169px] absolute top-0 left-0" src="images/get-started-ssss-2.png" alt="">
+            <img class="block md:hidden w-[149px] h-[152px] absolute bottom-0 right-0" src="images/get-started-ssss-3.png" alt="">
+
+            <img class="hidden md:block w-[318px] h-[434px] absolute bottom-0 right-[150px]" src="images/get-started-jeroiduser.png" alt="">
+            <p class="font-semibold text-[#8890A6]">
+                JOIN 300,000+ PEOPLE USING JEROID
+            </p>
+            <p class="text-2xl md:text-[40px] leading-[30px] md:leading-[50px] font-lexend font-semibold text-center mb-5">
+                Create a free account and <br>
+                start trading at the best rates
+            </p>
+            <p class="text-[#E4E6F7] font-medium text-center md:text-left">
+                Why settle for less when you can have more, sign up today and
+                enjoy the sweetest rates
+            </p>
+            <button class="mt-9 py-4 px-12 bg-white text-mainColor rounded-lg raise border border-[#0A1F5C] text-lg font-semibold">
+                Get Started
+            </button>
+        </div>
+
+        <!-- Footer -->
+        <div class="px-4 md:px-16 pt-8 pb-6 text-mainColor font-lexend max-w-[1600px] mx-auto appear2">
+            <div class="pb-5 mb-8 flex flex-col gap-8 md:gap-0 md:flex-row md:justify-between border-b-2 border-mainColor">
+                <ul class="space-y-2">
+                    <p class="text-xl font-lexend font-extralight mb-4">
+                        Products
+                    </p>
+                    <li>
+                        <a class="footerlink" href="crypto.html">
+                            Digital Assets
+                        </a>
+                    </li>
+                    <li>
+                        <a class="footerlink" href="gift-cards.html">Giftcards</a>
+                    </li>
+                    <li>
+                        <a class="footerlink" href="utility-bills.html">Utility Bills</a>
+                    </li>
+                    <li>
+                        <a class="footerlink" href="e-funds.html">E-funds - Trade Chat</a>
+                    </li>
+                </ul>
+
+                <ul class="space-y-2">
+                    <p class="text-xl font-lexend font-extralight mb-4">
+                        Company
+                    </p>
+                    <li>
+                        <a class="footerlink" href="about-us.html">About Us</a>
+                    </li>
+                    <li>
+                        <a class="footerlink" href="careers.html">Careers</a>
+                    </li>
+                    <li><a class="footerlink" href="blog.html">Blog</a></li>
+                </ul>
+
+                <ul class="space-y-2">
+                    <p class="text-xl font-lexend font-extralight mb-4">
+                        Legal
+                    </p>
+                    <li>
+                        <a class="footerlink" href="terms-of-use.html">Terms of Use</a>
+                    </li>
+                    <li>
+                        <a class="footerlink" href="privacy-policy.html">Privacy Policy</a>
+                    </li>
+                    <li>
+                        <a class="footerlink" href="cookie-policy.html">Cookie Policy</a>
+                    </li>
+                    <li>
+                        <a class="footerlink" href="#">User Agreement</a>
+                    </li>
+                    <li>
+                        <a class="footerlink" href="#">GDPR</a>
+                    </li>
+                </ul>
+
+                <ul class="space-y-2">
+                    <p class="text-xl font-lexend font-extralight mb-4">
+                        Support
+                    </p>
+                    <li>
+                        <a class="footerlink" href="contact-us.html">Contact Us</a>
+                    </li>
+                    <li><a class="footerlink" href="faq.html">FAQs</a></li>
+                    <li>
+                        <a class="footerlink help_centre_link" href="www.jeroid.html">Help Center</a>
+                    </li>
+                </ul>
+
+                <ul class="space-y-2">
+                    <p class="text-xl font-lexend font-extralight mb-4">
+                        Contact Us
+                    </p>
+                    <li>
+                        Email Address:
+                        <span class="font-medium cursor-pointer"><a class="footerlink" href="mailto:#">info at jeroid dot ng</a></span>
+                    </li>
+                    <li>
+                        Phone Number:<span class="font-medium">
+                            <a class="footerlink" href="tel:+2348124877671">08124877671</a>
+                        </span>
+                    </li>
+                    <li>
+                        Address:
+                        <span class="font-medium block"><a class="footerlink" target="_blank" href="http://maps.google.com/?q=194,%20Herbert%20Macaulay%20Way,%20Yaba,%20Lagos">
+                                194, Herbert Macaulay Way, <br>
+                                Yaba, Lagos.
+                            </a>
+                        </span>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="flex flex-col-reverse gap-3 md:gap-0 md:flex-row justify-between pr-0 md:pr-[90px]">
+                <p>
+                    Jeroid &copy;
+                    <script>
+                        document.write(new Date().getFullYear());
+                    </script>
+                    . All rights reserved.
+                </p>
+                <div class="flex gap-4 md:gap-9">
+                    <a target="_blank" href="https://twitter.com/jeroidng?s=11">
+                        <img class="w-6 h-6" alt="" src="images/footer-twitter.png">
+                    </a>
+                    <a target="_blank" href="https://www.linkedin.com/company/jeroidngltd/">
+                        <img class="w-6 h-6" alt="" src="images/footer-linkedin.png">
+                    </a>
+                    <a target="_blank" href="https://www.instagram.com/jeroidng/">
+                        <img class="w-6 h-6" alt="" src="images/footer-instagram.png">
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <script type="text/javascript" src="js/40eaaf52b6.js" crossorigin="anonymous"></script>
+        <script type="text/javascript" src="js/javascript-navbarscroll.js"></script>
+        <script type="text/javascript" src="js/javascript-dropdown.js"></script>
+        <script type="text/javascript" src="js/javascript-smoothScroll.js"></script>
+
+        <script>
+            window.intercomSettings = {
+                api_base: "https://api-iam.intercom.io",
+                app_id: "kc2gko7n",
+                custom_launcher_selector: ".help_centre_link",
+            };
+        </script>
+
+        <script>
+            // We pre-filled your app ID in the widget URL: 'https://widget.intercom.io/widget/kc2gko7n'
+            (function () {
+                var w = window;
+                var ic = w.Intercom;
+                if (typeof ic === "function") {
+                    ic("reattach_activator");
+                    ic("update", w.intercomSettings);
+                } else {
+                    var d = document;
+                    var i = function () {
+                        i.c(arguments);
+                    };
+                    i.q = [];
+                    i.c = function (args) {
+                        i.q.push(args);
+                    };
+                    w.Intercom = i;
+                    var l = function () {
+                        var s = d.createElement("script");
+                        s.type = "text/javascript";
+                        s.async = true;
+                        s.src = "https://widget.intercom.io/widget/kc2gko7n";
+                        var x = d.getElementsByTagName("script")[0];
+                        x.parentNode.insertBefore(s, x);
+                    };
+                    if (document.readyState === "complete") {
+                        l();
+                    } else if (w.attachEvent) {
+                        w.attachEvent("onload", l);
+                    } else {
+                        w.addEventListener("load", l, false);
+                    }
+                }
+            })();
+        </script>
+    </body>
+</html>

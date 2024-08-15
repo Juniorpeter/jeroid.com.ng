@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <script>
+            (function (w, d, s, l, i) {
+                w[l] = w[l] || [];
+                w[l].push({
+                    "gtm.start": new Date().getTime(),
+                    event: "gtm.js",
+                });
+                var f = d.getElementsByTagName(s)[0],
+                    j = d.createElement(s),
+                    dl = l != "dataLayer" ? "&l=" + l : "";
+                j.async = true;
+                j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+                f.parentNode.insertBefore(j, f);
+            })(window, document, "script", "dataLayer", "GTM-MX257JXZ");
+        </script>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=yes">
+        <link rel="icon" href="favicons/images-favicon.ico">
+        <link rel="stylesheet" href="css/css-style.css">
+        <link rel="stylesheet" href="css/css-custom.css">
+        <link href="https://cdn.jsdelivr.net/gh/hung1001/font-awesome-pro-v6@44659d9/css/all.min.css" rel="stylesheet" type="text/css">
+        <title>E-funds - Jeroid</title>
+    </head>
+    <body>
+        <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MX257JXZ" height="0" width="0" style="display: none; visibility: hidden"></iframe></noscript>
+        <!-- header -->
+        <div style="transition: top 0.3s" id="nav-bar" class="flex sticky top-0 bg-white z-50 justify-between md:justify-around font-lexend max-w-[1600px] mx-auto">
+            <div class="py-5">
+                <a href="www.jeroid.html">
+                    <img class="w-[150px] h-[36.4px] pl-4 md:pl-0 md:w-full md:h-full self-center" src="images/images-logo.svg" alt="logo">
+                </a>
+            </div>
+
+            <ul class="hidden md:flex min-h-max gap-[60px] items-center text-mainColor">
+                <li class="h-full relative dropdown">
+                    <div class="h-full dropbtn flex items-center gap-2 cursor-pointer">
+                        Products
+                        <i class="fa-solid fa-chevron-down nav-icon"></i>
+                    </div>
+
+                    <div id="productDropdown" class="px-5 py-3 dropdown-content absolute top-[84px] left-[-100px] min-w-max hidden z-50 bg-white rounded-lg shadow-dropdown">
+                        <a href="crypto.html" class="py-3 px-2 block cursor-pointer rounded-lg nav-hov">
+                            <div class="flex gap-2 items-center">
+                                <div class="w-8 h-8 bg-[#e6f7fd] rounded-full flex items-center justify-center">
+                                    <img src="images/images-currency-bitcoin-circle.svg">
+                                </div>
+                                <div class="flex flex-col">
+                                    <span class="font-medium">Digital Assets</span>
+                                    <span class="text-xs font-poppins text-[#697599]">Save, Buy/Sell &amp; Send/Receive Digital
+                                        Assets</span>
+                                </div>
+                            </div>
+                        </a>
+
+                        <a href="gift-cards.html" class="py-3 px-2 block cursor-pointer rounded-lg nav-hov">
+                            <div class="flex gap-2 items-center">
+                                <div class="w-8 h-8 bg-[#E6f7fd] rounded-full flex items-center justify-center">
+                                    <img src="images/images-credit-card-02.svg">
+                                </div>
+                                <div class="flex flex-col">
+                                    <span class="font-medium">Giftcards</span>
+                                    <span class="text-xs font-poppins text-[#697599]">Redeem unused Giftcards&nbsp;for&nbsp;Cash</span>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="utility-bills.html" class="py-3 px-2 block cursor-pointer rounded-lg nav-hov">
+                            <div class="flex gap-2 items-center">
+                                <div class="w-8 h-8 bg-[#E6f7fd] rounded-full flex items-center justify-center">
+                                    <img src="images/homepage-receipt.svg">
+                                </div>
+                                <div class="flex flex-col">
+                                    <span class="font-medium">Utility Bills</span>
+                                    <span class="text-xs font-poppins text-[#697599]">Airtime top up &amp; Data</span>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="e-funds.html" class="py-3 px-2 block cursor-pointer rounded-lg nav-hov">
+                            <div class="flex gap-2 items-center">
+                                <div class="w-8 h-8 bg-[#E6f7fd] rounded-full flex items-center justify-center">
+                                    <img src="images/images-message-chat-square.svg">
+                                </div>
+                                <div class="flex flex-col">
+                                    <span class="font-medium">E-funds - Trade Chat</span>
+                                    <span class="text-xs font-poppins text-[#697599]">Secured OTC Transactions for
+                                        Unlisted&nbsp;Assets</span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </li>
+
+                <li class="h-full dropdown relative">
+                    <div class="h-full dropbtn flex items-center gap-2 cursor-pointer">
+                        Company
+                        <i class="fa-solid fa-chevron-down nav-icon"></i>
+                    </div>
+                    <div class="px-5 py-3 dropdown-content absolute top-[84px] left-[-50px] min-w-[200px] font-medium rounded-lg shadow-dropdown bg-white z-10 hidden">
+                        <a class="text-mainColor navlink nav-hov" href="about-us.html">About Us</a>
+                        <a class="text-mainColor navlink nav-hov" href="careers.html">Career</a>
+                        <a class="text-mainColor navlink nav-hov" href="blog.html">Blog</a>
+                    </div>
+                </li>
+
+                <li class="h-full dropdown relative">
+                    <div class="h-full dropbtn flex items-center gap-2 cursor-pointer">
+                        Support
+                        <i class="fa-solid fa-chevron-down nav-icon"></i>
+                    </div>
+                    <div class="px-5 py-3 dropdown-content absolute top-[84px] left-[-50px] min-w-[200px] font-medium rounded-lg shadow-dropdown bg-white z-10 hidden">
+                        <a class="text-mainColor navlink nav-hov" href="contact-us.html">Contact Us</a>
+                        <a class="text-mainColor navlink nav-hov" href="faq.html">FAQs</a>
+                        <a class="text-mainColor navlink nav-hov help_centre_link" href="#">Help Center</a>
+                    </div>
+                </li>
+
+                <li class="h-full dropdown relative">
+                    <div class="h-full dropbtn flex items-center gap-2 cursor-pointer">
+                        Calculator
+                        <i class="fa-solid fa-chevron-down nav-icon"></i>
+                    </div>
+                    <div class="px-5 py-3 dropdown-content absolute top-[84px] left-[-50px] min-w-[200px] font-medium rounded-lg shadow-dropdown bg-white z-10 hidden">
+                        <a class="text-mainColor navlink nav-hov" href="crypto-calculator.html">Crypto
+                        </a>
+                        <a class="text-mainColor navlink nav-hov" href="giftcard-calculator.html">Giftcard
+                        </a>
+                    </div>
+                </li>
+            </ul>
+
+            <div class="flex self-center items-center gap-6">
+                <button class="hidden md:flex px-3 py-2 md:px-6 md:py-3 bg-mainColor text-sm text-white btn btn-blue btn-nav">
+                    Log in
+                </button>
+                <button class="hidden md:flex text-sm text-[#54C9F4] border btn-startedNew btn btn-nav">
+                    Get Started
+                </button>
+
+                <div id="" onclick="openNav()" class="space-y-1 md:hidden cursor-pointer z-20 pr-4">
+                    <div class="w-6 h-1 rounded bg-mainColor"></div>
+                    <div class="w-6 h-1 rounded bg-mainColor"></div>
+                    <div class="w-6 h-1 rounded bg-mainColor"></div>
+                </div>
+            </div>
+
+            <div id="myNav" class="overlay">
+                <div class="flex items-center justify-between py-5 bg-white">
+                    <a href="www.jeroid.html">
+                        <img class="w-[150px] h-[36.4px] pl-4" src="images/images-logo.svg" alt=""></a>
+
+                    <i class="fa-solid fa-xmark pr-4 text-[30px] text-mainColor cursor-pointer" onclick="closeNav()"></i>
+                </div>
+
+                <ul id="mobileLinks" class="w-full flex-col items-start text-mainColor p-4">
+                    <li class="h-full mb-3 relative self-center">
+                        <div onclick="mobileProductDropdown()" class="h-full dropBtn flex justify-between items-center gap-2 cursor-pointer">
+                            Products
+                            <i class="fa-solid fa-chevron-down nav-icon"></i>
+                        </div>
+
+                        <div id="mobileProductDropdown" class="py-3 w-full hidden dropdownContent">
+                            <a href="crypto.html" class="py-3 px-2 block cursor-pointer rounded-lg hover:bg-[#DDE4F7]">
+                                <div class="flex gap-2 items-center">
+                                    <div class="w-8 h-8 bg-[#e6f7fd] rounded-full flex items-center justify-center">
+                                        <img src="images/images-currency-bitcoin-circle.svg">
+                                    </div>
+                                    <div class="flex flex-col">
+                                        <span class="font-medium text-sm">Crypto</span>
+                                        <span class="text-xs font-poppins text-[#697599]">Save, Buy/Sell &amp; Send/Receive
+                                            Crypto</span>
+                                    </div>
+                                </div>
+                            </a>
+
+                            <a href="gift-cards.html" class="py-3 px-2 block cursor-pointer rounded-lg hover:bg-[#DDE4F7]">
+                                <div class="flex gap-2 items-center">
+                                    <div class="w-8 h-8 bg-[#E6f7fd] rounded-full flex items-center justify-center">
+                                        <img src="images/images-credit-card-02.svg">
+                                    </div>
+                                    <div class="flex flex-col">
+                                        <span class="font-medium text-sm">Giftcards</span>
+                                        <span class="text-xs font-poppins text-[#697599]">Redeem unused Giftcards for
+                                            Cash</span>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="utility-bills.html" class="py-3 px-2 block cursor-pointer rounded-lg hover:bg-[#DDE4F7]">
+                                <div class="flex gap-2 items-center">
+                                    <div class="w-8 h-8 bg-[#E6f7fd] rounded-full flex items-center justify-center">
+                                        <img src="images/homepage-receipt.svg">
+                                    </div>
+                                    <div class="flex flex-col">
+                                        <span class="font-medium text-sm">Utility Bills</span>
+                                        <span class="text-xs font-poppins text-[#697599]">Airtime top up &amp; Data</span>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="e-funds.html" class="py-3 px-2 block cursor-pointer rounded-lg hover:bg-[#DDE4F7]">
+                                <div class="flex gap-2 items-center">
+                                    <div class="w-8 h-8 bg-[#E6f7fd] rounded-full flex items-center justify-center">
+                                        <img src="images/images-message-chat-square.svg">
+                                    </div>
+                                    <div class="flex flex-col">
+                                        <span class="font-medium text-sm">E-funds - Trade Chat</span>
+                                        <span class="text-xs font-poppins text-[#697599]">Secured OTC Transactions for
+                                            Unlisted Assets</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </li>
+
+                    <li class="h-full mb-3 dropdown relative">
+                        <div onclick="mobileCompanyDropdown()" class="h-full dropBtn flex justify-between items-center gap-2 cursor-pointer">
+                            Company
+                            <i class="fa-solid fa-chevron-down nav-icon"></i>
+                        </div>
+                        <div id="mobileCompanyDropdown" class="px-2 py-1 hidden dropdownContent text-sm font-medium bg-[#dde4f7]">
+                            <a class="text-mainColor block p-2" href="about-us.html">About Us</a>
+                            <a class="text-mainColor block p-2" href="careers.html">Career</a>
+                            <a class="text-mainColor block p-2" href="blog.html">Blog</a>
+                        </div>
+                    </li>
+
+                    <li class="h-full dropdown mb-3 relative">
+                        <div onclick="mobileSupportDropdown()" class="h-full dropBtn flex justify-between items-center gap-2 cursor-pointer">
+                            Support
+                            <i class="fa-solid fa-chevron-down nav-icon"></i>
+                        </div>
+                        <div id="mobileSupportDropdown" class="px-2 py-1 hidden dropdownContent text-sm font-medium bg-[#dde4f7]">
+                            <a class="text-mainColor block p-2" href="contact-us.html">Contact Us</a>
+                            <a class="text-mainColor block p-2" href="faq.html">FAQs</a>
+                            <a class="text-mainColor block p-2 help_centre_link" href="www.jeroid.html">Help Center</a>
+                        </div>
+                    </li>
+
+                    <li class="h-full dropdown mb-3 relative">
+                        <div onclick="mobileCalculatorDropdown()" class="h-full dropBtn flex justify-between items-center gap-2 cursor-pointer">
+                            Calculator
+                            <i class="fa-solid fa-chevron-down nav-icon"></i>
+                        </div>
+                        <div id="mobileCalculatorDropdown" class="px-2 py-1 hidden dropdownContent text-sm font-medium bg-[#dde4f7]">
+                            <a class="text-mainColor block p-2" href="crypto-calculator.html">Crypto</a>
+                            <a class="text-mainColor block p-2" href="giftcard-calculator.html">Giftcards</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!--hero section-->
+        <div class="bg-mainColor h-[500px] md:h-[850px] overflow-hidden px-4 pt-14 md:pt-[117px] flex flex-col items-center text-center text-white relative max-w-[1600px] mx-auto appear2">
+            <p class="font-lexend font-medium text-[40px] md:text-5xl capitalize mb-4 md:mb-0 leading-[50px] md:leading-[77px]">
+                Introducing Jeroid's new E-Funds Chat feature
+            </p>
+            <p class="font-poppins md:w-[1024px]">
+                The ultimate way to trade unlisted assets! With E-Funds Chat,
+                you can buy or sell assets that aren't listed on traditional
+                exchanges.
+            </p>
+            <button class="mt-8 py-3 px-6 font-lexend font-semibold rounded bg-white text-mainColor">
+                Download App
+            </button>
+            <div class="relative mt-10 md:mt-[55px]">
+                <span class="hidden md:block absolute top-[150px] right-[60px] backdrop-blur-[2px] bg-efund1 text-white px-[33px] py-[17px] text-sm font-lexend font-medium rounded-tl-2xl rounded-tr-2xl rounded-bl-2xl">I want to sell $500 BTC</span>
+                <span class="hidden absolute top-[218px] left-[57px] backdrop-blur-[2px] bg-efund2 py-4 pl-5 pr-[30px] font-lexend font-medium text-sm md:flex items-center gap-[6px] bg-[#ebebeb] text-white rounded-tl-2xl rounded-tr-2xl rounded-bl-2xl">Request Status:
+                    <span class="text-xs text-[#F79009] bg-efund3 rounded-sm px-[7px] py-[3.5px]">Pending</span></span>
+                <span class="hidden md:block absolute top-[422px] left-[57px] backdrop-blur-[2px] text-[#12B76A] bg-efund2 font-lexend font-medium text-sm py-[17px] pl-5 pr-[50px] rounded-tl-2xl rounded-tr-2xl rounded-bl-2xl">Transaction Successful</span>
+
+                <img class="h-[300px] md:h-full" src="images/e-funds-efunds-hero.svg" alt="">
+            </div>
+        </div>
+
+        <!--how it works-->
+        <div class="bg-white flex flex-col justify-center items-center gap-8 md:gap-[100px] px-4 md:px-[90px] pb-[60px] py-10 md:pt-[63px] overflow-hidden relative max-w-[1600px] mx-auto appear2">
+            <h2 class="text-mainColor text-2xl md:text-[36px] font-medium font-lexend">
+                How it works
+            </h2>
+
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="flex-1 md:pr-12">
+                    <div class="w-[327px] flex gap-8 flex-col items-center">
+                        <img src="images/e-funds-download-app.svg" alt="">
+                        <h3 class="text-mainColor text-2xl md:text-[36px] font-medium font-lexend text-center">
+                            Login to your Jeroid account
+                        </h3>
+                        <p class="font-poppins text-[#808080] text-center">
+                            Download the Jeroid App and begin your trading
+                            experience with this new feature
+                        </p>
+                    </div>
+                </div>
+                <div class="flex-1 px-12 py-20 md:border-l md:border-r border-mainColor">
+                    <div class="w-[327px] flex gap-8 flex-col items-center">
+                        <img src="images/e-funds-navigate.svg" alt="">
+                        <h3 class="text-mainColor text-2xl md:text-[36px] font-medium font-lexend text-center">
+                            Navigate to the E-funds section
+                        </h3>
+                        <p class="font-poppins text-[#808080] text-center">
+                            Go to the E-Funds section and click on the top-up
+                        </p>
+                    </div>
+                </div>
+                <div class="flex-1 md:pl-12">
+                    <div class="w-[327px] flex gap-8 flex-col items-center">
+                        <img src="images/e-funds-message-chat-circle.svg" alt="">
+                        <h3 class="text-mainColor text-2xl md:text-[36px] font-medium font-lexend text-center">
+                            Connect to our agents for a one-on-one session
+                        </h3>
+                        <p class="font-poppins text-[#808080] text-center">
+                            Our agents are knowledgeable and always willing to
+                            go the extra mile to help make the best possible
+                            trades.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <button class="py-2 px-4 bg-mainColor text-white rounded font-lexend font-medium text-base">
+                Get Started
+            </button>
+
+            <img class="absolute bottom-0 left-0" src="images/e-funds-ssss2.svg" alt="">
+            <img class="absolute right-0 top-0" src="images/e-funds-ssss3.svg" alt="">
+        </div>
+
+        <!--revolutionary trading-->
+        <div class="relative flex items-end max-w-[1600px] gap-[90px] mx-auto font-lexend px-4 md:px-[90px] pt-8 md:pt-[160px] pb-[54px] bg-secColor">
+            <div class="hidden md:block rounded-2xl h-[561px] min-w-[382px] bg-mainColor relative z-10">
+                <div class="absolute top-8 left-8">
+                    <p class="absolute top-[55px] left-[35px] w-[200px] z-10 text-mainColor text-xs leading-[180%]">
+                        Impressive! Jeroid E-Fund feature is a game-changer -
+                        fast, secure, and efficient! With just a simple request,
+                        trades are executed in no time. Experience the power of
+                        E-Funds Chat for yourself.
+                    </p>
+                    <img class="" src="images/e-funds-question.svg" alt="">
+                </div>
+                <img class="absolute top-[285px] left-[261px]" src="images/e-funds-Ellipse-1.svg" alt="">
+                <img class="absolute bottom-0 right-0" src="images/e-funds-user-efund.svg" alt="">
+            </div>
+            <div class="relative z-10">
+                <h1 class="text-2xl md:text-[32px] text-mainColor font-medium leading-[120%]">
+                    Experience Revolutionary Crypto Trading with E-Funds Chat !
+                </h1>
+                <p class="leading-[180%] text-[#5C6B98] mt-6">
+                    Our platform is designed to be both OTC and a one-on-one
+                    trading services, so you can choose the option that works
+                    best for you. Whether you&rsquo;re looking for a new trade or you
+                    prefer a more personalized experience E-Funds chat has got
+                    you.
+                </p>
+
+                <div class="flex flex-col md:flex-row gap-6 mb-8 mt-10">
+                    <div class="bg-mainColor space-y-3 md:w-1/2 p-4 rounded-lg text-white">
+                        <span class="w-10 h-10 rounded-full flex items-center justify-center bg-white"><img src="images/e-funds-shield-tick-blue.svg" alt=""></span>
+                        <p class="text-xl md:text-2xl font-medium">
+                            Easy Trading
+                        </p>
+                        <p>
+                            Our user-friendly interface ensures a wonderful
+                            trading experience.
+                        </p>
+                    </div>
+                    <div class="bg-[#4DE9A0] space-y-3 md:w-1/2 p-4 rounded-lg text-white">
+                        <span class="w-10 h-10 rounded-full flex items-center justify-center bg-white"><img src="images/e-funds-shield-tick-green.svg" alt=""></span>
+                        <p class="text-xl md:text-2xl font-medium">Secure</p>
+                        <p>
+                            We use the latest technology to protect your data.
+                        </p>
+                    </div>
+                </div>
+                <div class="bg-[#8ADAF8] space-y-3 p-4 rounded-lg text-white">
+                    <span class="w-10 h-10 rounded-full flex items-center justify-center bg-white"><img src="images/e-funds-user-03.svg" alt=""></span>
+                    <p class="text-xl md:text-2xl font-medium">
+                        Personalized Experience
+                    </p>
+                    <p>
+                        Our agents are here to assist you every step of the way,
+                        providing real-time and personalized trading experience
+                        tailored to your preferences.
+                    </p>
+                </div>
+            </div>
+
+            <img class="absolute bottom-0 left-0" src="images/e-funds-ssss2.svg" alt="">
+            <img class="absolute right-0 top-0" src="images/e-funds-ssss3.svg" alt="">
+        </div>
+
+        <!--request-->
+        <!-- <div class="flex flex-col md:flex-row">
+            <div
+                class="md:w-1/2 h-[300px] md:h-auto bg-[#DDE4F7] flex justify-center items-center text-5xl md:text-8xl text-mainColor font-lexend font-bold"
+            >
+                Request
+            </div>
+            <div
+                class="md:w-1/2 md:pt-[118px] md:pb-[80px] bg-mainColor flex justify-center items-center"
+            >
+                <img src="/assets/images/e-funds/request.svg" alt="" />
+            </div>
+        </div> -->
+
+        <!-- Footer -->
+        <div class="px-4 md:px-16 pt-8 pb-6 text-mainColor font-lexend max-w-[1600px] mx-auto appear2">
+            <div class="pb-5 mb-8 flex flex-col gap-8 md:gap-0 md:flex-row md:justify-between border-b-2 border-mainColor">
+                <ul class="space-y-2">
+                    <p class="text-xl font-lexend font-extralight mb-4">
+                        Products
+                    </p>
+                    <li>
+                        <a class="footerlink" href="crypto.html">
+                            Digital Assets
+                        </a>
+                    </li>
+                    <li>
+                        <a class="footerlink" href="gift-cards.html">Giftcards</a>
+                    </li>
+                    <li>
+                        <a class="footerlink" href="utility-bills.html">Utility Bills</a>
+                    </li>
+                    <li>
+                        <a class="footerlink" href="e-funds.html">E-funds - Trade Chat</a>
+                    </li>
+                </ul>
+
+                <ul class="space-y-2">
+                    <p class="text-xl font-lexend font-extralight mb-4">
+                        Company
+                    </p>
+                    <li>
+                        <a class="footerlink" href="about-us.html">About Us</a>
+                    </li>
+                    <li>
+                        <a class="footerlink" href="careers.html">Careers</a>
+                    </li>
+                    <li><a class="footerlink" href="blog.html">Blog</a></li>
+                </ul>
+
+                <ul class="space-y-2">
+                    <p class="text-xl font-lexend font-extralight mb-4">
+                        Legal
+                    </p>
+                    <li>
+                        <a class="footerlink" href="terms-of-use.html">Terms of Use</a>
+                    </li>
+                    <li>
+                        <a class="footerlink" href="privacy-policy.html">Privacy Policy</a>
+                    </li>
+                    <li>
+                        <a class="footerlink" href="cookie-policy.html">Cookie Policy</a>
+                    </li>
+                    <li>
+                        <a class="footerlink" href="#">User Agreement</a>
+                    </li>
+                    <li>
+                        <a class="footerlink" href="#">GDPR</a>
+                    </li>
+                </ul>
+
+                <ul class="space-y-2">
+                    <p class="text-xl font-lexend font-extralight mb-4">
+                        Support
+                    </p>
+                    <li>
+                        <a class="footerlink" href="contact-us.html">Contact Us</a>
+                    </li>
+                    <li><a class="footerlink" href="faq.html">FAQs</a></li>
+                    <li>
+                        <a class="footerlink help_centre_link" href="www.jeroid.html">Help Center</a>
+                    </li>
+                </ul>
+
+                <ul class="space-y-2">
+                    <p class="text-xl font-lexend font-extralight mb-4">
+                        Contact Us
+                    </p>
+                    <li>
+                        Email Address:
+                        <span class="font-medium cursor-pointer"><a class="footerlink" href="mailto:#">info at jeroid dot ng</a></span>
+                    </li>
+                    <li>
+                        Phone Number:<span class="font-medium">
+                            <a class="footerlink" href="tel:+2348124877671">08124877671</a>
+                        </span>
+                    </li>
+                    <li>
+                        Address:
+                        <span class="font-medium block"><a class="footerlink" target="_blank" href="http://maps.google.com/?q=194,%20Herbert%20Macaulay%20Way,%20Yaba,%20Lagos">
+                                194, Herbert Macaulay Way, <br>
+                                Yaba, Lagos.
+                            </a>
+                        </span>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="flex flex-col-reverse gap-3 md:gap-0 md:flex-row justify-between pr-0 md:pr-[90px]">
+                <p>
+                    Jeroid &copy;
+                    <script>
+                        document.write(new Date().getFullYear());
+                    </script>
+                    . All rights reserved.
+                </p>
+                <div class="flex gap-4 md:gap-9">
+                    <a target="_blank" href="https://twitter.com/jeroidng?s=11">
+                        <img class="w-6 h-6" alt="" src="images/footer-twitter.png">
+                    </a>
+                    <a target="_blank" href="https://www.linkedin.com/company/jeroidngltd/">
+                        <img class="w-6 h-6" alt="" src="images/footer-linkedin.png">
+                    </a>
+                    <a target="_blank" href="https://www.instagram.com/jeroidng/">
+                        <img class="w-6 h-6" alt="" src="images/footer-instagram.png">
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <script type="text/javascript" src="js/40eaaf52b6.js" crossorigin="anonymous"></script>
+        <script type="text/javascript" src="js/javascript-navbarscroll.js"></script>
+        <script type="text/javascript" src="js/javascript-dropdown.js"></script>
+        <script type="text/javascript" src="js/javascript-smoothScroll.js"></script>
+        <script type="text/javascript" src="js/javascript-utilityanimation.js"></script>
+
+        <script>
+            window.intercomSettings = {
+                api_base: "https://api-iam.intercom.io",
+                app_id: "kc2gko7n",
+                custom_launcher_selector: ".help_centre_link",
+            };
+        </script>
+
+        <script>
+            // We pre-filled your app ID in the widget URL: 'https://widget.intercom.io/widget/kc2gko7n'
+            (function () {
+                var w = window;
+                var ic = w.Intercom;
+                if (typeof ic === "function") {
+                    ic("reattach_activator");
+                    ic("update", w.intercomSettings);
+                } else {
+                    var d = document;
+                    var i = function () {
+                        i.c(arguments);
+                    };
+                    i.q = [];
+                    i.c = function (args) {
+                        i.q.push(args);
+                    };
+                    w.Intercom = i;
+                    var l = function () {
+                        var s = d.createElement("script");
+                        s.type = "text/javascript";
+                        s.async = true;
+                        s.src = "https://widget.intercom.io/widget/kc2gko7n";
+                        var x = d.getElementsByTagName("script")[0];
+                        x.parentNode.insertBefore(s, x);
+                    };
+                    if (document.readyState === "complete") {
+                        l();
+                    } else if (w.attachEvent) {
+                        w.attachEvent("onload", l);
+                    } else {
+                        w.addEventListener("load", l, false);
+                    }
+                }
+            })();
+        </script>
+    </body>
+</html>

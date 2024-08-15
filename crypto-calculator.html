@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <script>
+            (function (w, d, s, l, i) {
+                w[l] = w[l] || [];
+                w[l].push({
+                    "gtm.start": new Date().getTime(),
+                    event: "gtm.js",
+                });
+                var f = d.getElementsByTagName(s)[0],
+                    j = d.createElement(s),
+                    dl = l != "dataLayer" ? "&l=" + l : "";
+                j.async = true;
+                j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+                f.parentNode.insertBefore(j, f);
+            })(window, document, "script", "dataLayer", "GTM-MX257JXZ");
+        </script>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" href="favicons/images-favicon.ico">
+
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=yes">
+
+        <link rel="stylesheet" href="css/css-style.css">
+        <link rel="stylesheet" href="css/css-custom.css">
+        <link href="https://cdn.jsdelivr.net/gh/hung1001/font-awesome-pro-v6@44659d9/css/all.min.css" rel="stylesheet" type="text/css">
+        <title>Crypto Calculator - Jeroid</title>
+    </head>
+    <body>
+        <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MX257JXZ" height="0" width="0" style="display: none; visibility: hidden"></iframe></noscript>
+        <!-- header -->
+        <div style="transition: top 0.3s" id="nav-bar" class="flex sticky top-0 bg-white z-50 justify-between md:justify-around font-lexend max-w-[1600px] mx-auto">
+            <div class="py-5">
+                <a href="www.jeroid.html">
+                    <img class="w-[150px] h-[36.4px] pl-4 md:pl-0 md:w-full md:h-full self-center" src="images/images-logo.svg" alt="logo">
+                </a>
+            </div>
+
+            <ul class="hidden md:flex min-h-max gap-[60px] items-center text-mainColor">
+                <li class="h-full relative dropdown">
+                    <div class="h-full dropbtn flex items-center gap-2 cursor-pointer">
+                        Products
+                        <i class="fa-solid fa-chevron-down nav-icon"></i>
+                    </div>
+
+                    <div id="productDropdown" class="px-5 py-3 dropdown-content absolute top-[84px] left-[-100px] min-w-max hidden z-50 bg-white rounded-lg shadow-dropdown">
+                        <a href="crypto.html" class="py-3 px-2 block cursor-pointer rounded-lg nav-hov">
+                            <div class="flex gap-2 items-center">
+                                <div class="w-8 h-8 bg-[#e6f7fd] rounded-full flex items-center justify-center">
+                                    <img src="images/images-currency-bitcoin-circle.svg">
+                                </div>
+                                <div class="flex flex-col">
+                                    <span class="font-medium">Digital Assets</span>
+                                    <span class="text-xs font-poppins text-[#697599]">Save, Buy/Sell &amp; Send/Receive Digital
+                                        Assets</span>
+                                </div>
+                            </div>
+                        </a>
+
+                        <a href="gift-cards.html" class="py-3 px-2 block cursor-pointer rounded-lg nav-hov">
+                            <div class="flex gap-2 items-center">
+                                <div class="w-8 h-8 bg-[#E6f7fd] rounded-full flex items-center justify-center">
+                                    <img src="images/images-credit-card-02.svg">
+                                </div>
+                                <div class="flex flex-col">
+                                    <span class="font-medium">Giftcards</span>
+                                    <span class="text-xs font-poppins text-[#697599]">Redeem unused Giftcards&nbsp;for&nbsp;Cash</span>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="utility-bills.html" class="py-3 px-2 block cursor-pointer rounded-lg nav-hov">
+                            <div class="flex gap-2 items-center">
+                                <div class="w-8 h-8 bg-[#E6f7fd] rounded-full flex items-center justify-center">
+                                    <img src="images/homepage-receipt.svg">
+                                </div>
+                                <div class="flex flex-col">
+                                    <span class="font-medium">Utility Bills</span>
+                                    <span class="text-xs font-poppins text-[#697599]">Airtime top up &amp; Data</span>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="e-funds.html" class="py-3 px-2 block cursor-pointer rounded-lg nav-hov">
+                            <div class="flex gap-2 items-center">
+                                <div class="w-8 h-8 bg-[#E6f7fd] rounded-full flex items-center justify-center">
+                                    <img src="images/images-message-chat-square.svg">
+                                </div>
+                                <div class="flex flex-col">
+                                    <span class="font-medium">E-funds - Trade Chat</span>
+                                    <span class="text-xs font-poppins text-[#697599]">Secured OTC Transactions for
+                                        Unlisted&nbsp;Assets</span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </li>
+
+                <li class="h-full dropdown relative">
+                    <div class="h-full dropbtn flex items-center gap-2 cursor-pointer">
+                        Company
+                        <i class="fa-solid fa-chevron-down nav-icon"></i>
+                    </div>
+                    <div class="px-5 py-3 dropdown-content absolute top-[84px] left-[-50px] min-w-[200px] font-medium rounded-lg shadow-dropdown bg-white z-10 hidden">
+                        <a class="text-mainColor navlink nav-hov" href="about-us.html">About Us</a>
+                        <a class="text-mainColor navlink nav-hov" href="careers.html">Career</a>
+                        <a class="text-mainColor navlink nav-hov" href="blog.html">Blog</a>
+                    </div>
+                </li>
+
+                <li class="h-full dropdown relative">
+                    <div class="h-full dropbtn flex items-center gap-2 cursor-pointer">
+                        Support
+                        <i class="fa-solid fa-chevron-down nav-icon"></i>
+                    </div>
+                    <div class="px-5 py-3 dropdown-content absolute top-[84px] left-[-50px] min-w-[200px] font-medium rounded-lg shadow-dropdown bg-white z-10 hidden">
+                        <a class="text-mainColor navlink nav-hov" href="contact-us.html">Contact Us</a>
+                        <a class="text-mainColor navlink nav-hov" href="faq.html">FAQs</a>
+                        <a class="text-mainColor navlink nav-hov help_centre_link" href="#">Help Center</a>
+                    </div>
+                </li>
+
+                <li class="h-full dropdown relative">
+                    <div class="h-full dropbtn flex items-center gap-2 cursor-pointer">
+                        Calculator
+                        <i class="fa-solid fa-chevron-down nav-icon"></i>
+                    </div>
+                    <div class="px-5 py-3 dropdown-content absolute top-[84px] left-[-50px] min-w-[200px] font-medium rounded-lg shadow-dropdown bg-white z-10 hidden">
+                        <a class="text-mainColor navlink nav-hov" href="crypto-calculator.html">Crypto
+                        </a>
+                        <a class="text-mainColor navlink nav-hov" href="giftcard-calculator.html">Giftcard
+                        </a>
+                    </div>
+                </li>
+            </ul>
+
+            <div class="flex self-center items-center gap-6">
+                <button class="hidden md:flex px-3 py-2 md:px-6 md:py-3 bg-mainColor text-sm text-white btn btn-blue btn-nav">
+                    Log in
+                </button>
+                <button class="hidden md:flex text-sm text-[#54C9F4] border btn-startedNew btn btn-nav">
+                    Get Started
+                </button>
+
+                <div id="" onclick="openNav()" class="space-y-1 md:hidden cursor-pointer z-20 pr-4">
+                    <div class="w-6 h-1 rounded bg-mainColor"></div>
+                    <div class="w-6 h-1 rounded bg-mainColor"></div>
+                    <div class="w-6 h-1 rounded bg-mainColor"></div>
+                </div>
+            </div>
+
+            <div id="myNav" class="overlay">
+                <div class="flex items-center justify-between py-5 bg-white">
+                    <a href="www.jeroid.html">
+                        <img class="w-[150px] h-[36.4px] pl-4" src="images/images-logo.svg" alt=""></a>
+
+                    <i class="fa-solid fa-xmark pr-4 text-[30px] text-mainColor cursor-pointer" onclick="closeNav()"></i>
+                </div>
+
+                <ul id="mobileLinks" class="w-full flex-col items-start text-mainColor p-4">
+                    <li class="h-full mb-3 relative self-center">
+                        <div onclick="mobileProductDropdown()" class="h-full dropBtn flex justify-between items-center gap-2 cursor-pointer">
+                            Products
+                            <i class="fa-solid fa-chevron-down nav-icon"></i>
+                        </div>
+
+                        <div id="mobileProductDropdown" class="py-3 w-full hidden dropdownContent">
+                            <a href="crypto.html" class="py-3 px-2 block cursor-pointer rounded-lg hover:bg-[#DDE4F7]">
+                                <div class="flex gap-2 items-center">
+                                    <div class="w-8 h-8 bg-[#e6f7fd] rounded-full flex items-center justify-center">
+                                        <img src="images/images-currency-bitcoin-circle.svg">
+                                    </div>
+                                    <div class="flex flex-col">
+                                        <span class="font-medium text-sm">Crypto</span>
+                                        <span class="text-xs font-poppins text-[#697599]">Save, Buy/Sell &amp; Send/Receive
+                                            Crypto</span>
+                                    </div>
+                                </div>
+                            </a>
+
+                            <a href="gift-cards.html" class="py-3 px-2 block cursor-pointer rounded-lg hover:bg-[#DDE4F7]">
+                                <div class="flex gap-2 items-center">
+                                    <div class="w-8 h-8 bg-[#E6f7fd] rounded-full flex items-center justify-center">
+                                        <img src="images/images-credit-card-02.svg">
+                                    </div>
+                                    <div class="flex flex-col">
+                                        <span class="font-medium text-sm">Giftcards</span>
+                                        <span class="text-xs font-poppins text-[#697599]">Redeem unused Giftcards for
+                                            Cash</span>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="utility-bills.html" class="py-3 px-2 block cursor-pointer rounded-lg hover:bg-[#DDE4F7]">
+                                <div class="flex gap-2 items-center">
+                                    <div class="w-8 h-8 bg-[#E6f7fd] rounded-full flex items-center justify-center">
+                                        <img src="images/homepage-receipt.svg">
+                                    </div>
+                                    <div class="flex flex-col">
+                                        <span class="font-medium text-sm">Utility Bills</span>
+                                        <span class="text-xs font-poppins text-[#697599]">Airtime top up &amp; Data</span>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="e-funds.html" class="py-3 px-2 block cursor-pointer rounded-lg hover:bg-[#DDE4F7]">
+                                <div class="flex gap-2 items-center">
+                                    <div class="w-8 h-8 bg-[#E6f7fd] rounded-full flex items-center justify-center">
+                                        <img src="images/images-message-chat-square.svg">
+                                    </div>
+                                    <div class="flex flex-col">
+                                        <span class="font-medium text-sm">E-funds - Trade Chat</span>
+                                        <span class="text-xs font-poppins text-[#697599]">Secured OTC Transactions for
+                                            Unlisted Assets</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </li>
+
+                    <li class="h-full mb-3 dropdown relative">
+                        <div onclick="mobileCompanyDropdown()" class="h-full dropBtn flex justify-between items-center gap-2 cursor-pointer">
+                            Company
+                            <i class="fa-solid fa-chevron-down nav-icon"></i>
+                        </div>
+                        <div id="mobileCompanyDropdown" class="px-2 py-1 hidden dropdownContent text-sm font-medium bg-[#dde4f7]">
+                            <a class="text-mainColor block p-2" href="about-us.html">About Us</a>
+                            <a class="text-mainColor block p-2" href="careers.html">Career</a>
+                            <a class="text-mainColor block p-2" href="blog.html">Blog</a>
+                        </div>
+                    </li>
+
+                    <li class="h-full dropdown mb-3 relative">
+                        <div onclick="mobileSupportDropdown()" class="h-full dropBtn flex justify-between items-center gap-2 cursor-pointer">
+                            Support
+                            <i class="fa-solid fa-chevron-down nav-icon"></i>
+                        </div>
+                        <div id="mobileSupportDropdown" class="px-2 py-1 hidden dropdownContent text-sm font-medium bg-[#dde4f7]">
+                            <a class="text-mainColor block p-2" href="contact-us.html">Contact Us</a>
+                            <a class="text-mainColor block p-2" href="faq.html">FAQs</a>
+                            <a class="text-mainColor block p-2 help_centre_link" href="www.jeroid.html">Help Center</a>
+                        </div>
+                    </li>
+
+                    <li class="h-full dropdown mb-3 relative">
+                        <div onclick="mobileCalculatorDropdown()" class="h-full dropBtn flex justify-between items-center gap-2 cursor-pointer">
+                            Calculator
+                            <i class="fa-solid fa-chevron-down nav-icon"></i>
+                        </div>
+                        <div id="mobileCalculatorDropdown" class="px-2 py-1 hidden dropdownContent text-sm font-medium bg-[#dde4f7]">
+                            <a class="text-mainColor block p-2" href="crypto-calculator.html">Crypto</a>
+                            <a class="text-mainColor block p-2" href="giftcard-calculator.html">Giftcards</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!--hero section-->
+        <div class="md:pt-[148px] py-14 px-4 md:px-[90px] md:pb-[160px] bg-mainColor flex gap-[287px] items-center appear2 max-w-[1600px] mx-auto">
+            <div>
+                <p class="font-poppins text-sm md:text-lg font-medium text-white uppercase tracking-[0.155em]">
+                    Rate Calculator
+                </p>
+                <h1 class="font-lexend text-[40px] md:text-[60px] font-medium text-white md:w-[700px]">
+                    Know how much you stand to gain
+                </h1>
+            </div>
+            <div class="relative hidden md:block">
+                <img src="images/crypto-calculatorHero.svg" alt="">
+                <img src="images/homepage-newStar1.svg" alt="" class="hero-star absolute right-0 bottom-[-78px]">
+                <img class="hero-star absolute left-[-41px] top-[-82px]" src="images/homepage-newStar2.svg" alt="">
+                <img class="hero-star absolute left-[-306px] bottom-[-74px]" src="images/giftcard-newStar3.svg" alt="">
+                <img class="hero-star absolute right-[-37px] top-0" src="images/giftcard-polygontwo.svg" alt="">
+            </div>
+        </div>
+
+        <!--calculator-->
+        <div class="px-4 md:px-[90px] pt-16 pb-[82px] appear2 max-w-[1600px] mx-auto">
+            <p class="text-2xl md:text-4xl mb-5 md:mb-0 text-mainColor font-lexend tracking-[0.155em] uppercase">
+                Crypto
+            </p>
+            <div class="flex flex-col justify-between items-center md:flex-row appear2">
+                <div class="pt-[64px] pb-11 px-4 md:px-9 bg-[#EBEDF9] w-full md:w-[500px]">
+                    <p class="font-lexend text-mainColor">Select Currency:</p>
+                    <div id="myCryptos" class="flex gap-4 mt-6 mb-[46px]">
+                        <div class="flex flex-col gap-2 items-center cursor-pointer cryptoTab isActive">
+                            <div class="w-8 h-8 rounded-full loading-skeleton"></div>
+                            <p class="font-poppins text-[#A4A8B4] text-xs">
+                                Bitcoin
+                            </p>
+                            <div class="h-[2px] w-[58px] rounded-[5px] under-border"></div>
+                        </div>
+                        <div class="flex flex-col gap-2 items-center cursor-pointer cryptoTab">
+                            <div class="w-8 h-8 rounded-full loading-skeleton"></div>
+                            <p class="font-poppins text-[#A4A8B4] text-xs">
+                                USDT
+                            </p>
+                            <div class="h-[2px] w-[58px] rounded-[5px] under-border"></div>
+                        </div>
+                        <div class="flex flex-col gap-2 items-center cursor-pointer cryptoTab">
+                            <div class="w-8 h-8 rounded-full loading-skeleton"></div>
+                            <p class="font-poppins text-[#A4A8B4] text-xs">
+                                Ethereum
+                            </p>
+                            <div class="h-[2px] w-[58px] rounded-[5px] under-border"></div>
+                        </div>
+                    </div>
+                    <div>
+                        <div>
+                            <div class="flex flex-col gap-1">
+                                <span class="font-lexend text-mainColor">Wallet Action:</span>
+                                <select id="myCryptoActions" class="w-full border-[12px] border-transparent bg-[#bbc7e6] rounded-[2px] text-mainColor text-[16px]">
+                                    <!-- <option value="choose">
+                                        Select Action
+                                    </option> -->
+                                    <option class="text-poppins" value="buy">
+                                        BUY
+                                    </option>
+                                    <option value="sell">SELL</option>
+                                </select>
+                            </div>
+                            <div class="w-full w-[246px mt-4 flex flex-col">
+                                <span class="font-lexend text-mainColor">Amount in USD</span>
+                                <div class="w-full flex items-center px-4 py-3 font-poppins text-mainColor bg-[#bbc7e6] rounded">
+                                    <input id="amountField" class="w-full outline-none bg-transparent crypto-calc--input" type="number" placeholder="Enter amount:">
+                                </div>
+                                <span class="font-lexend text-sm">$1 - NGN<span id="rateAmount">1000</span></span>
+                                <!-- <div class="flex gap-3 mt-5">
+                                    <span
+                                        onclick="fiveThousand()"
+                                        class="font-poppins leading-6 text-mainColor text-sm px-[10px] rounded-sm border-[0.5px] border-[#0B2368] cursor-pointer"
+                                        >&#8358;5,000</span
+                                    >
+                                    <span
+                                        onclick="tenThousand()"
+                                        class="font-poppins leading-6 text-mainColor text-sm px-[10px] rounded-sm border-[0.5px] border-[#0B2368] cursor-pointer"
+                                        >&#8358;10,000</span
+                                    >
+                                    <span
+                                        onclick="twentyThousand()"
+                                        class="font-poppins leading-6 text-mainColor text-sm px-[10px] rounded-sm border-[0.5px] border-[#0B2368] cursor-pointer"
+                                        >&#8358;20,000</span
+                                    >
+                                </div> -->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex items-center gap-10 mt-[24px]">
+                        <div class="flex flex-col w-full">
+                            <div class="self-center px-[10px] py-2 rounded font-poppins font-medium text-2xl">
+                                <span id="calculatedAmount" class="text-center">0.00</span>
+                            </div>
+                            <div class="self-center px-[10px] bg-[#CEDAFA] text-center rounded font-poppins text-sm mt-0">
+                                <span id="estimatedAmount">BTC</span>
+                                <span id="calculatedCrypto">0.0000</span>
+                            </div>
+                            <span class="mt-2 text-mainColor text-center text-sm font-lexend">NOTE: This is an estimated rate.<br>
+                                Actual rate may differ</span>
+                        </div>
+
+                        <!-- <div class="flex flex-col gap-5">
+                            <span class="font-lexend text-mainColor"
+                                >Rate:</span
+                            >
+                            <div
+                                class="w-[160px] px-[10px] py-2 bg-[#CEDAFA] rounded font-poppins text-sm"
+                            >
+                                &#8358;<span>12,000,000</span>
+                            </div>
+                        </div> -->
+                    </div>
+
+                    <a href="http://onelink.to/s7t5b2" id="buy-sell-btn" class="inline-block cursor-pointer mt-10 font-poppins text-xs text-white btn btn-blue btn-calc bg-mainColor">
+                        Buy Now
+                    </a>
+                </div>
+                <div>
+                    <img src="images/crypto-calcGif.gif" alt="">
+                </div>
+            </div>
+        </div>
+
+        <!-- Get Started-->
+        <div class="pt-[50px] pb-[183px] px-4 md:py-40 flex flex-col items-center bg-white text-mainColor relative font-poppins appear2 max-w-[1600px] mx-auto">
+            <img class="hidden md:block w-[430px] h-[374px] absolute top-0 left-0" src="images/get-started-ssss2.png" alt="">
+            <img class="hidden md:block w-[522px] h-[314px] absolute bottom-0 right-0" src="images/get-started-ssss1.png" alt="">
+            <img class="block md:hidden w-[99px] h-[169px] absolute top-0 left-0" src="images/get-started-ssss-2.png" alt="">
+            <img class="block md:hidden w-[149px] h-[152px] absolute bottom-0 right-0" src="images/get-started-ssss-3.png" alt="">
+
+            <img class="hidden md:block w-[318px] h-[434px] absolute bottom-0 right-[150px]" src="images/get-started-jeroiduser.png" alt="">
+            <p class="font-semibold text-mainColor">
+                JOIN 300,000+ PEOPLE USING JEROID
+            </p>
+            <p class="text-2xl md:text-[40px] leading-[30px] md:leading-[50px] font-lexend font-semibold text-center mb-5">
+                Create a free account and <br>
+                start trading at the best rates
+            </p>
+            <p class="text-[#AAAAAA] font-medium text-center md:text-left">
+                Why settle for less when you can have more, sign up today and
+                enjoy the sweetest rates
+            </p>
+            <button class="mt-9 bg-mainColor text-white font-poppins font-semibold btn btn-blue btn-getStarted2">
+                Get Started
+            </button>
+        </div>
+
+        <!-- Footer -->
+        <div class="px-4 md:px-16 pt-8 pb-6 text-mainColor font-lexend appear2 max-w-[1600px] mx-auto">
+            <div class="pb-5 mb-8 flex flex-col gap-8 md:gap-0 md:flex-row md:justify-between border-b-2 border-mainColor">
+                <ul class="space-y-2">
+                    <p class="text-xl font-lexend font-extralight mb-4">
+                        Products
+                    </p>
+                    <li>
+                        <a class="footerlink" href="crypto.html">
+                            Digital Assets
+                        </a>
+                    </li>
+                    <li>
+                        <a class="footerlink" href="gift-cards.html">Giftcards</a>
+                    </li>
+                    <li>
+                        <a class="footerlink" href="utility-bills.html">Utility Bills</a>
+                    </li>
+                    <li>
+                        <a class="footerlink" href="e-funds.html">E-funds - Trade Chat</a>
+                    </li>
+                </ul>
+
+                <ul class="space-y-2">
+                    <p class="text-xl font-lexend font-extralight mb-4">
+                        Company
+                    </p>
+                    <li>
+                        <a class="footerlink" href="about-us.html">About Us</a>
+                    </li>
+                    <li>
+                        <a class="footerlink" href="careers.html">Careers</a>
+                    </li>
+                    <li><a class="footerlink" href="blog.html">Blog</a></li>
+                </ul>
+
+                <ul class="space-y-2">
+                    <p class="text-xl font-lexend font-extralight mb-4">
+                        Legal
+                    </p>
+                    <li>
+                        <a class="footerlink" href="terms-of-use.html">Terms of Use</a>
+                    </li>
+                    <li>
+                        <a class="footerlink" href="privacy-policy.html">Privacy Policy</a>
+                    </li>
+                    <li>
+                        <a class="footerlink" href="cookie-policy.html">Cookie Policy</a>
+                    </li>
+                    <li>
+                        <a class="footerlink" href="#">User Agreement</a>
+                    </li>
+                    <li>
+                        <a class="footerlink" href="#">GDPR</a>
+                    </li>
+                </ul>
+
+                <ul class="space-y-2">
+                    <p class="text-xl font-lexend font-extralight mb-4">
+                        Support
+                    </p>
+                    <li>
+                        <a class="footerlink" href="contact-us.html">Contact Us</a>
+                    </li>
+                    <li><a class="footerlink" href="faq.html">FAQs</a></li>
+                    <li>
+                        <a class="footerlink help_centre_link" href="www.jeroid.html">Help Center</a>
+                    </li>
+                </ul>
+
+                <ul class="space-y-2">
+                    <p class="text-xl font-lexend font-extralight mb-4">
+                        Contact Us
+                    </p>
+                    <li>
+                        Email Address:
+                        <span class="font-medium cursor-pointer"><a class="footerlink" href="mailto:#">info at jeroid dot ng</a></span>
+                    </li>
+                    <li>
+                        Phone Number:<span class="font-medium">
+                            <a class="footerlink" href="tel:+2348124877671">08124877671</a>
+                        </span>
+                    </li>
+                    <li>
+                        Address:
+                        <span class="font-medium block"><a class="footerlink" target="_blank" href="http://maps.google.com/?q=194,%20Herbert%20Macaulay%20Way,%20Yaba,%20Lagos">
+                                194, Herbert Macaulay Way, <br>
+                                Yaba, Lagos.
+                            </a>
+                        </span>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="flex flex-col-reverse gap-3 md:gap-0 md:flex-row justify-between pr-0 md:pr-[90px]">
+                <p>
+                    Jeroid &copy;
+                    <script>
+                        document.write(new Date().getFullYear());
+                    </script>
+                    . All rights reserved.
+                </p>
+                <div class="flex gap-4 md:gap-9">
+                    <a target="_blank" href="https://twitter.com/jeroidng?s=11">
+                        <img class="w-6 h-6" alt="" src="images/footer-twitter.png">
+                    </a>
+                    <a target="_blank" href="https://www.linkedin.com/company/jeroidngltd/">
+                        <img class="w-6 h-6" alt="" src="images/footer-linkedin.png">
+                    </a>
+                    <a target="_blank" href="https://www.instagram.com/jeroidng/">
+                        <img class="w-6 h-6" alt="" src="images/footer-instagram.png">
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <script type="text/javascript" src="js/javascript-cryptoRateCalculator.js"></script>
+        <script type="text/javascript" src="js/40eaaf52b6.js" crossorigin="anonymous"></script>
+        <script type="text/javascript" src="js/javascript-dropdown.js"></script>
+        <script type="text/javascript" src="js/javascript-navbarscroll.js"></script>
+        <script type="text/javascript" src="js/javascript-allyouneed.js"></script>
+
+        <script type="text/javascript" src="js/javascript-smoothScroll.js"></script>
+        <script type="text/javascript" src="js/javascript-faq-accordion.js"></script>
+        <script type="text/javascript" src="js/javascript-cryptoAmountField.js"></script>
+        <script type="text/javascript" src="js/javascript-tabs.js"></script>
+
+        <script>
+            window.intercomSettings = {
+                api_base: "https://api-iam.intercom.io",
+                app_id: "kc2gko7n",
+                custom_launcher_selector: ".help_centre_link",
+            };
+        </script>
+
+        <script>
+            // We pre-filled your app ID in the widget URL: 'https://widget.intercom.io/widget/kc2gko7n'
+            (function () {
+                var w = window;
+                var ic = w.Intercom;
+                if (typeof ic === "function") {
+                    ic("reattach_activator");
+                    ic("update", w.intercomSettings);
+                } else {
+                    var d = document;
+                    var i = function () {
+                        i.c(arguments);
+                    };
+                    i.q = [];
+                    i.c = function (args) {
+                        i.q.push(args);
+                    };
+                    w.Intercom = i;
+                    var l = function () {
+                        var s = d.createElement("script");
+                        s.type = "text/javascript";
+                        s.async = true;
+                        s.src = "https://widget.intercom.io/widget/kc2gko7n";
+                        var x = d.getElementsByTagName("script")[0];
+                        x.parentNode.insertBefore(s, x);
+                    };
+                    if (document.readyState === "complete") {
+                        l();
+                    } else if (w.attachEvent) {
+                        w.attachEvent("onload", l);
+                    } else {
+                        w.addEventListener("load", l, false);
+                    }
+                }
+            })();
+        </script>
+    </body>
+</html>
